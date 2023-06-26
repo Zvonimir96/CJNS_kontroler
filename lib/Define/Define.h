@@ -1,10 +1,11 @@
 #pragma once
 #include "Arduino.h"
 
-#define PATH_PIN 6
-#define DICE_PIN 7
-#define HOUSE_PIN 8
-#define SAFE_HOUSE_PIN 9
+#define PATH_PIN 4
+#define DICE_PIN 5
+#define HOUSE_PIN 6
+#define TOUCHPAD_PIN 7
+#define SAFE_HOUSE_PIN 8
 
 #define PATH_COUNT 52
 #define DICE_COUNT 9
@@ -17,21 +18,21 @@
 #define ANIMATION_MIN_DELAY 10
 #define ANIMATION_DELAY_INKREMENT 5
 
-#define PLAYER1_LEFT 1
-#define PLAYER1_SUBMIT 2
-#define PLAYER1_RIGHT 4
+#define PLAYER1_LEFT 1<<1
+#define PLAYER1_SUBMIT 1<<0
+#define PLAYER1_RIGHT 1<<2
 
-#define PLAYER2_LEFT 8
-#define PLAYER2_SUBMIT 16
-#define PLAYER2_RIGHT 32
+#define PLAYER2_LEFT 1<<4
+#define PLAYER2_SUBMIT 1<<3
+#define PLAYER2_RIGHT 1<<5
 
-#define PLAYER3_LEFT 64
-#define PLAYER3_SUBMIT 128
-#define PLAYER3_RIGHT 256
+#define PLAYER3_LEFT 1<<7
+#define PLAYER3_SUBMIT 1<<6
+#define PLAYER3_RIGHT 1<<8
 
-#define PLAYER4_LEFT 512
-#define PLAYER4_SUBMIT 1024
-#define PLAYER4_RIGHT 2048
+#define PLAYER4_LEFT 1<<10
+#define PLAYER4_SUBMIT 1<<9
+#define PLAYER4_RIGHT 1<<11
 
 #define DICE_BUTTON 4096
 

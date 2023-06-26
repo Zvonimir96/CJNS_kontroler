@@ -25,7 +25,7 @@ bool Dice::animation = false;
 Color Dice::color = Color();
 unsigned long Dice::time_to_update = millis() + UPDATE_TIME_MS;
 
-PCF8575 Controller::PCF(0x27);
+PCF8575 Controller::PCF(0x20);
 int16_t Controller::buttons16 = 65535;
 Player Controller::players[4];
 bool Controller::can_update = false;

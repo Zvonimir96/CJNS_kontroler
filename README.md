@@ -4,7 +4,7 @@ Koristi se pločica s repo https://github.com/jkordek1/Man-Don-t-Get-Angry-Board
 Napravljeno je nešto osnovno u c++ da se isproba jeli to uopće ostvarivo i malo se doradilo za dan otvorenih vrata TVZ-a.
 
 <p align="center">
-  <img src="https://github.com/Zvonimir96/LUDO-Atmega/assets/46999608/d1f5d50f-c719-4317-91cf-e5948bb7a51b" width="70%">
+  <img src="https://github.com/Zvonimir96/LUDO-Atmega/assets/46999608/64ab41b9-493b-414b-9b26-111d5c4ff333" width="70%">
 </p>
 
 # Project status

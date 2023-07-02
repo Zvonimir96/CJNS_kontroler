@@ -18,6 +18,7 @@ Strip Elements::house_strip = Strip(HOUSE_COUNT, HOUSE_PIN);
 Strip Elements::safe_house_strip = Strip(SAFE_HOUSE_COUNT, SAFE_HOUSE_PIN);
 Strip Elements::path_strip = Strip(PATH_COUNT, PATH_PIN);
 Strip Elements::dice_strip = Strip(DICE_COUNT, DICE_PIN);
+Strip Elements::touch_strip = Strip(TOUCH_COUNT, TOUCHPAD_PIN);
 
 uint8_t Dice::rotation = 0;
 int8_t Dice::number = -1;
@@ -31,22 +32,24 @@ Player Controller::players[4];
 bool Controller::can_update = false;
 game_state Controller::state = select_color_state;
 
-Color Player::available_colors[] = {Color(0), Color(10000), Color(20000), Color(30000), Color(40000), Color(50000)};
+Color Player::available_colors[] = {Color(0), Color(10000), Color(20000), Color(30000), Color(35000), Color(40000)};
 Color Path::default_color = Color();
 
 Figure *Figure::figures[16];
 uint8_t Figure::figure_number = 0;
 
-void setup() {
+void setup()
+{
   Serial.begin(9600);
   Serial.println("Test");
 
   Elements::init();
-  Controller::init();
   Path::init();
+  Controller::init();
 }
 
-void loop() {
+void loop()
+{
   Controller::update();
   Dice::update();
   Animator::update();

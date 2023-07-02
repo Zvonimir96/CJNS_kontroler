@@ -1,7 +1,8 @@
 #pragma once
 #include "Define.h"
 
-class Color{
+class Color
+{
     uint16_t hue;
     uint8_t sat;
     uint8_t val;
@@ -14,8 +15,10 @@ public:
     uint16_t get_hue();
     uint8_t get_sat();
     uint8_t get_val();
-    void fade();
+
     void set_hue(uint16_t);
     void set_val(uint8_t);
     void set_sat(uint8_t);
+
+    void fade();
 };

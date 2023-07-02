@@ -3,8 +3,10 @@
 #include "Elements.h"
 #include "Color.h"
 
-class Path{
+class Path
+{
     static Color default_color;
+
 public:
     static void turn_on(uint8_t, Color);
     static void turn_off(uint8_t);

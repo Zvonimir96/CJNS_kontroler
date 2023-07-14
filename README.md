@@ -9,6 +9,6 @@ The idea of the project is to create an electronic version of the game LUDO to p
 - [ ] Rewrite code from C++ to C
 - [ ] Finish game logic
 - [ ] Implement different types of animations
-- [ ] Implement different kinds of sounds
+- [ ] Implement sounds
 - [ ] Battery indicator
-- [ ] Save last prgoress
+- [ ] Save last game
